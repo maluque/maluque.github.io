@@ -98,9 +98,9 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 17pt;
 		font-weight: 400;
 		line-height: 1.75em;
 	}
@@ -111,18 +111,18 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #ffc100;
+		color: #FF9933;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffc100 !important;
+			color: #FF9933 !important;
 			text-decoration: none;
 		}
 
 	strong, b {
-		color: #787878;
+		color: #000000;
 		font-weight: 400;
 	}
 
@@ -134,21 +134,24 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
-		font-weight: 400;
+	h1, h2 {
+		color: #000000;
+		font-weight: 600;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	h3, h4, h5, h6 {
+		color: #000000;
+		font-weight: 300;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+	}
+	
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
-		}
-
-	h1 {
-		font-size: 2em;
-		line-height: 1.5em;
 	}
+
 	h1 {
 		font-size: 80px; /* You can adjust the size as needed */
 	}
@@ -160,6 +163,7 @@ input, select, textarea {
 	h3 {
 		font-size: 1.25em;
 		line-height: 1.5em;
+		font-weight: 300;
 	}
 
 	h4 {
@@ -377,7 +381,7 @@ input, select, textarea {
 		}
 
 		.row > .col-6 {
-			width: 50%;
+			width: 30%;
 		}
 
 		.row > .off-6 {
@@ -1791,8 +1795,13 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
+	header.major h1 {
+		margin-bottom: 2px; /* Adjust the margin as needed */
+	}
+
 	header.major h2 {
 		font-size: 2em;
+		margin-bottom: 20px; /* Adjust the margin as needed */
 	}
 
 /* Form */
@@ -1842,7 +1851,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ffc100;
+			border-color: #FF9933;
 		}
 
 	select {
@@ -1947,7 +1956,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ffc100;
+			border-color: #FF9933;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2447,7 +2456,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2461,12 +2470,12 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
-		input[type="submit"]:hover,
+		input[type="submit"]:hover,.major
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #ffc100;
-			color: #ffc100 !important;
+			border-color: #FFCC00;
+			color: #FFCC00 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2474,8 +2483,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #ffc100;
-			color: #49bf9d !important;
+			border-color: #FFCC00;
+			color: #FFCC00 !important;
 		}
 
 		input[type="submit"].icon,
@@ -2518,8 +2527,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #ffc100;
-			border-color: #ffc100;
+			background-color: #FFCC00;
+			border-color: #FFCC00;
 			color: #ffffff !important;
 		}
 
@@ -2527,16 +2536,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #ffc100;
-				border-color: #ffc100;
+				background-color: #FFCC00;
+				border-color: #FFCC00;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #ffc100;
-				border-color: #ffc100;
+				background-color: #FFCC00;
+				border-color: #FFCC00;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2548,7 +2557,7 @@ input, select, textarea {
 		.button:disabled {
 			background-color: #e7e7e7 !important;
 			border-color: #e7e7e7 !important;
-			color: #b2b2b2 !important;
+			color: #000000 !important;
 			cursor: default;
 		}
 
@@ -2573,7 +2582,7 @@ input, select, textarea {
 			margin: 0;
 		}
 
-/* Header */
+/* Header LEFT COLUMN */ 
 
 	#header {
 		display: -moz-flex;
@@ -2592,19 +2601,19 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
+		background-color: #0f0f0e;
+		background-attachment: fixed,								scroll;
+		background-image: url("images/overlay.png"), url("../../images/green_flush_bg.jpg");
 		background-position: top center,							top center;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
-		color: rgba(255, 255, 255, 0.5);
+		color: rgba(242, 237, 237, 1);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 4em 4em;
 		position: fixed;
-		text-align: right;
-		top: 0;
+		text-align: left;
+		top: 1000;
 		width: 35%;
 	}
 
@@ -2625,6 +2634,7 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
+			font-size: 1em;
 			color: #ffffff;
 		}
 
@@ -2632,15 +2642,22 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
-			font-size: 1.35em;
+		#header h2 {
+			color: rgba(255, 255, 255, 1);
+			font-size: 2em;
 			line-height: 1.75em;
-			margin: 0;
+			margin: 0px 0px 0px 10px;
+		}
+
+		#header h4 {
+			color: rgba(255, 255, 255, 1);
+			font-size: 0.8em;
+			line-height: 1.75em;
+			margin: 0px 0px 0px 10px;
 		}
 
 		#header .image.avatar { /* LAST one */
-			margin: 0px 0px 0px 10px; /* Adjust the top, right, bottom, and left margins as needed */
+			margin: -50px 100px 0px 10px; /* Adjust the top, right, bottom, and left margins as needed */
 			width: 16.25em;
 		}
 
@@ -2691,8 +2708,8 @@ input, select, textarea {
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 2em 0 0 0;
 		}
 
 			#main > section:first-child {
@@ -3079,7 +3096,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg2.jpg");
+				background-image: url("images/overlay.png"), url("../../images/green_flush_bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3229,5 +3246,15 @@ input, select, textarea {
 
 .button-column {
     flex: 1;
-    margin: 0 5px; /* Adjust the margin as needed */
+    margin: 10px 0px -20px 15px; /* Adjust the margin as needed */
+}
+
+.two-column-list {
+	columns: 2; /* Set the number of columns to 2 */
+	column-gap: 0.1px; /* Adjust the gap between columns as needed */
+}
+
+.two-column-list li {
+	margin-bottom: 5px; /* Add some spacing between list items */
+	text-align: left;
 }
